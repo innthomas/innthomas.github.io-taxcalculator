@@ -2,120 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Webpage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="nav.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Inn Thomas</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">Snapshot</div>
+    <nav>
+        <div class="logo">
+            <h4>@innthomas</h4>
+        </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#banner">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
         </ul>
-    </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <section class="banner" id="banner">
+        <img src="./Images/wall.jpg" class="fit-bg" alt="">
+        <div class="content">
+            <h2>Innocent Thomas</h2>
+            <p>Frontend & Mobile Developer</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
 
-    <!-- Hero section -->
+    <section class="about" id="about">
+        <div class="content-bx">
+            <h2 class="title-text">Who's Innocent Thomas?</h2>
+            <p class="text">Innocent Thomas is a frontend and mobile developer from Nigeria. Although qualified as a chartered accountant,his interest in learning the rudiments of accounting softwares and packages led him to exploring the exciting world of software development. He works with a range of technologies like HTML, CSS, JavaScript,dart and quite some other frameworks like React and Flutter. <br/>
+                
+            <a href="#skills" class="btn">Top Skills</a>
+        </div>
+    </section>
 
-    <div class="hero-section">
-        <div class="hero-content-heading">
-            <h3>Let's take a snapshot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae quod molestias voluptas nam <br> facere numquam quos pariatur repellendus excepturi!</p>
-        </div>
-        <div class="hero-content-btn">
-            <a href="#">Learn More</a>
-        </div>
-    </div>
 
-    <!-- sub-hero section -->
-    <div class="hero-background">
-        <div class="background">
-            <h4>Background</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
-        </div>
-        <div class="hero-background-pos"></div>
-    </div>
-    <div class="snapshot-team">
-        <h2>Snapshot Team</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
-    </div>
-    <div class="snapshot-box">
-        <div class="snapshot-box-content">
-            <div class="box1">
-                    <div class="circle"></div>
-                    <h5>Linda, Manager</h5>
+    <section class="banner2"  id="skills">
+        <img src="./Images/capuccino.jpg" class="fit-bg" alt="">
+        <div class="tech">
+            <div class="img-container">
+                <i class="devicon-html5-plain colored"></i> 
+                <h2>HTML5</h2>
             </div>
-            <div class="box1">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
+            <div class="img-container">
+                <i class="devicon-css3-plain colored"></i> 
+                <h2>CSS3</h2>
             </div>
-            <div class="box3">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
+            <div class="img-container">
+                <img src="./Images/javascript-js-logo-2949701702-seeklogo.com.png" alt="">
+                <h2>JavaScript</h2>
             </div>
-        </div>
-    </div>
-
-    <!-- Gallery section -->
-    <div class="gallery-section">
-        <div class="gallery-content">
-            <h4>Gallery</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
-        </div>
-        <div class="gallery-img">
-            <div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
+            <div class="img-container">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <h2>Bootstrap</h2>
             </div>
-            <div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
+            <div class="img-container">
+                <i class="devicon-react-original colored"></i>
+                <h2>React</h2>
+            </div>
+            <div class="img-container">
+                <img src="./Images/git-logo-CD8D6F1C09-seeklogo.com.png" alt="">
+                <h2>Git</h2>
+            </div>
+            <div class="img-container">
+                <i class="devicon-github-original colored"></i>
+                <h2>Github</h2>
+            </div>
+            <div class="img-container">
+                <i class="devicon-flutter-plain colored"></i>
+                <h2>Flutter</h2>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer section -->
-    <div class="footer">
-        <div class="footer-content">
-            <h4>Send a message</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
+    <section class="projects" id="projects">
+        <div class="content">
+            <h2 class="title-text">Projects</h2>
+            <p class="text">These are some of my projects:</p>
         </div>
-        <div class="footer-input">
-            <input type="text" placeholder="Name"> 
-            <input type="email" placeholder="Email">
+    <div class="projects-list">
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip1.png" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>maths app<br><span><i class="devicon-react-original"></i></span></h2>
+            </div>
         </div>
-        <div class="footer-textarea">
-            <textarea placeholder="Message"></textarea>
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip2.png" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>nurses schedule<br><span><i class="devicon-react-original"></i></span></h2>
+            </div>
         </div>
-        <div class="footer-btn">
-            <a href="#">Send Message</a>
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip3.png" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>x-messanger<br><span><i class="devicon-html5-plain"></i>  <i class="devicon-css3-plain"></i>    <i class="devicon-javascript-plain"></i></span></h2>
+            </div>
         </div>
-        <h6>Copyright &copy; 2021 Zuri Training.</h6>
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip4.jpeg" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>E-Commerce<br><span><i class="devicon-html5-plain"></i>  <i class="devicon-css3-plain"></i>    <i class="devicon-javascript-plain"></i></span></h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip5.png" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>esusu app<br><span><i class="devicon-react-original"></i></span></h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-bx">
+                <a href="#"><img src="./Images/wip6.jpeg" class="fit-bg" alt=""></a>
+            </div>
+            <div class="content">
+                <h2>groceries delivery app<br><span><i class="devicon-html5-plain"></i>  <i class="devicon-css3-plain"></i>    <i class="devicon-javascript-plain"></i></span></h2>
+            </div>
+        </div>
+        <a href="https://github.com/innthomas?tab=repositories" class="btn">More Projects  <i class="devicon-github-original"></i></a>
     </div>
+    </section>
 
-    <!-- Hamburger menu for responsive design -->
-    <div class="topnav" id="myTopnav" style="position:absolute;top:0px;">
-        <a href="index.html" class="active" class="nav-item" id="fn">Snapshot</a>
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">About</a>
-        <a href="#" class="nav-item">Gallery</a>
-        <a href="#" class="nav-item">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <section class="banner3" id="contact">
+        <img src="./Images/techy.jpg" class="fit-bg" alt="">
+        <form>
+            <div class="field-name">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="field-email">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="field-password">
+                <i class="fas fa-envelope"></i>
+                <textarea placeholder="Message" name="message" required></textarea>
+                <button type="submit" name="submit"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </form>
+    </section>
+
+    <section class="footer">
+        <h4 class="footer-text">Developed by <a href="">InnThomas</a> 2021.<br> All rights reserved.</h4>
+        <ul class="sci">
+            <li><a href="https://github.com/innthomas"><i class="devicon-github-original"></i></a></li>
+            <li><a href="https://twitter.com/innthomas"><img src="./Images/twitter.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/innocent-thomas-aca-mnim-9ba69911a/"><i class="devicon-linkedin-plain"></i></a></li>
+        </ul>
+    </section>
 </body>
 </html>

@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #111;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 10000;
+}
+
+.logo {
+    letter-spacing: 3px;
+    color: black;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        height: 30vh;
+        width: 100%;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-120%);
+        transition: transform 0.5s ease-in-out;
+        z-index: -1000;
+    }
+
+    .burger {
+        display: block;
+        z-index: 1000;
+    }
+}
+
+.nav-active {
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.toggle .line1{
+    transform: translateX(3px);
+}
+
+.toggle .line2{
+    transform: translateX(5px);
+}
+
+.toggle .line3{
+    transform: translateX(0px);
+}
+
+section{
+    position: relative;
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+
+.banner .content{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content h2{
+    color: #fff;
+    font-size: 5em;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #191919;
+}
+
+.fit-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .smiley {
+    max-width: 20px;
+}
+
+.about .profile-img {
+    border-radius: 10%;
+}
+
+.about .content-bx {
+    min-width: 50%;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+}
+.title-text {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.text {
+    color: #fff;
+    font-size: 1em;
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about .text i {
+    font-size: 1.5em;
+}
+
+.about .img-bx {
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+
+.tech {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.img-container {
+    max-width: 100px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10%;
+    z-index: 1000;
+    margin: 5px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    z-index: 1000;
+}
+
+.img-container i {
+    font-size: 5em;
+}
+
+.img-container h2 {
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.banner2, .banner3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner2:before, .banner3:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+.banner2:after, .banner3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#111,transparent);
+}
+
+.projects {
+    text-align: center;
+}
+.destinatioprojects .content{
+    text-align: center;
+}
+.projects .projects-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.projects .projects-list .box {
+    position: relative;
+    min-width: 300px;
+    height: 480px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+}
+.projects .projects-list:hover .box {
+    opacity: 0.2;
+}
+.projects .projects-list .box:hover{
+    opacity: 1;
+}
+
+.projects .projects-list .box .img-bx {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.projects .projects-list .box .content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .projects-list .box .content h2 {
+    color: #fff;
+    font: 500;
+    line-height: 1.2em;
+}
+.projects .projects-list .box .content h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5vh;
+}
+.footer .sci {
+    position: relative;
+    display: flex;
+}
+.footer .sci li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.footer .sci li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.footer .sci li a img {
+    filter: invert(1);
+    max-width: 20px;
+    transform: scale(0.8);
+}
+
+.footer .sci li a i {
+    padding: 10px;
+}
+
+.footer-text{ 
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+}
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    section{
+        padding: 40px;
+    }
+    .header .logo img{
+        width: 50px;
+    }
+    .header .media-icon {
+        width: 40px;
+    }
+    .banner .content h2{
+        font-size: 2.5em;
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .content-bx, .about .img-bx {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    .about .img-bx {
+        min-height: 250px;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+    .projects .projects-list .box {
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+    }
+    .projects .projects-list .box .img-bx {
+        height: 320px;
+    }
+    .footer h4 {
+        margin-top: 45px;
+    }
+    .footer .sci li a img {
+        max-width: 15px;
+    }
+}
+
+
+form {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.field-finish p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.field-name,
+.field-email,
+.field-password,
+.field-finish {
+    position: relative;
+    background: white;
+    height: 50px;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.field-name i,
+.field-email i,
+.field-password i,
+.field-finish i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.field-name input,
+.field-email input,
+.field-password input {
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+    text-align: center;
+}
+
+.field-password textarea {
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.field-password button {
+    background: none;
+    border: none;
+    outline: none;
+}
